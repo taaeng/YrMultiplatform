@@ -38,7 +38,6 @@ class YrRepository {
             flow {
                 emit(SearchResultBusinessObject.Loading)
                 if (query.isNotEmpty()) {
-                    println("CLOWN try")
                     val dto =
                         client.get<SearchDto>("https://www.yr.no/api/v0/locations/search?q=$query")
                     emit(mapToBusinessObject(dto))
