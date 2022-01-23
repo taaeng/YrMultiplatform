@@ -10,7 +10,8 @@ sealed class SearchResultBusinessObject(){
     object Loading: SearchResultBusinessObject()
 }
 
-sealed class SearchIntent {
+sealed class SearchIntent{
     data class SearchQuery(val query: String) : SearchIntent()
-    data class GoToLocation(val locationId: String) : SearchIntent()
+    data class NavigateToLocation(val locationId: String) : SearchIntent()
+
 }

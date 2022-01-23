@@ -20,11 +20,11 @@ class MainActivity : AppCompatActivity() {
 
         val repo = YrRepository()
         val tv: TextView = findViewById(R.id.text_view)
-        repo.intent(SearchIntent.SearchQuery("Oslo"))
+        repo.intent(SearchIntent.SearchQuery("Oslosdfsdf"))
         lifecycleScope.launch {
             repo.searchResultFlow.flowWithLifecycle(lifecycle, Lifecycle.State.STARTED)
                 .collect { searchResult ->
-                    when(searchResult){
+                    tv.text = when(searchResult){
                         is SearchResultBusinessObject.Failed -> "Error: " + searchResult.msg
                         SearchResultBusinessObject.Loading -> "Loading"
                         is SearchResultBusinessObject.Success -> {
@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
                             searchResult.items.forEach {
                                 result += "*${it.id}: ${it.name}\n"
                             }
-                            tv.text = result
+                            result
                         }
                     }
                 }

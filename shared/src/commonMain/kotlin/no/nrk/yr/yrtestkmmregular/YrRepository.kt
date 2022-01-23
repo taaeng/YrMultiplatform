@@ -28,10 +28,9 @@ class YrRepository {
 
     fun intent(intent: SearchIntent) {
         when (intent) {
+            is SearchIntent.NavigateToLocation -> TODO()
             is SearchIntent.SearchQuery -> queryStateFlow.value = intent.query
-            is SearchIntent.GoToLocation -> TODO()
         }
-
     }
 
     val searchResultFlow: CFlow<SearchResultBusinessObject> =
@@ -39,17 +38,16 @@ class YrRepository {
             flow {
                 emit(SearchResultBusinessObject.Loading)
                 if (query.isNotEmpty()) {
-                    try {
-                        val dto =
-                            client.get<SearchDto>("https://www.yr.no/api/v0/locations/search?q=$query")
-                        emit(mapToBusinessObject(dto))
-                    } catch (ex: Exception) {
-                        emit(SearchResultBusinessObject.Failed("Failed to connect to network"))
-                    }
+                    println("CLOWN try")
+                    val dto =
+                        client.get<SearchDto>("https://www.yr.no/api/v0/locations/search?q=$query")
+                    emit(mapToBusinessObject(dto))
                 } else {
-                    emit(SearchResultBusinessObject.Failed("..."))
+                    emit(SearchResultBusinessObject.Failed("Empty"))
                 }
             }
+        }.catch {
+            emit(SearchResultBusinessObject.Failed("Failed to connect to network"))
         }.wrap()
 
     private fun mapToBusinessObject(dto: SearchDto): SearchResultBusinessObject {

@@ -14,7 +14,7 @@ struct ContentView: View {
                     "Search...",
                     text: $query
                 ).onSubmit {
-                    viewModel.searchQuery(query: query)
+                    viewModel.intent(intent: SearchIntent.SearchQuery(query: query))
                 }.padding(16)
                 
                 let searchResult = viewModel.searchResultPublished
@@ -30,14 +30,13 @@ struct ContentView: View {
                                     Spacer()
                                 }
                             }
-                            
                         }.frame(width: geometry.size.width)
                         
                     }
                 } else if(searchResult is SearchResultBusinessObject.Loading){
                     Text("Loading").frame(maxWidth: .infinity, maxHeight: .infinity,alignment: .center)
                 } else if(searchResult is SearchResultBusinessObject.Failed){
-                    let failedResult = searchResult as! SearchResult.Failed
+                    let failedResult = searchResult as! SearchResultBusinessObject.Failed
                     Text(failedResult.msg).frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
                 }
                 

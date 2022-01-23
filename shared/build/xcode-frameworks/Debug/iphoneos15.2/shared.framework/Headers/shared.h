@@ -6,7 +6,7 @@
 #import <Foundation/NSString.h>
 #import <Foundation/NSValue.h>
 
-@class SharedSearchIntent, SharedSearchResultBusinessObject, SharedCFlow<T>, SharedSearchIntentGoToLocation, SharedSearchIntentSearchQuery, SharedSearchResultBusinessObjectFailed, SharedSearchResultBusinessObjectLoading, SharedSearchResultBusinessObjectSuccessResultItem, SharedSearchResultBusinessObjectSuccess, SharedLinkDtoCompanion, SharedLinkDto, SharedLinksDtoCompanion, SharedLinksDto, SharedLocationDtoCompanion, SharedLocationDto, SharedLocationsDtoCompanion, SharedLocationsDto, SharedSearchDtoCompanion, SharedSearchDto, SharedKotlinUnit, SharedKotlinCancellationException, SharedKotlinThrowable, SharedKotlinx_coroutines_coreConflatedBroadcastChannel<E>, SharedKotlinArray<T>, SharedKotlinException, SharedKotlinRuntimeException, SharedKotlinIllegalStateException, SharedKotlinx_serialization_coreSerializersModule, SharedKotlinx_serialization_coreSerialKind, SharedKotlinNothing, SharedKotlinx_coroutines_coreAtomicDesc, SharedKotlinx_coroutines_coreLockFreeLinkedListNodePrepareOp, SharedKotlinx_coroutines_coreAtomicOp<__contravariant T>, SharedKotlinx_coroutines_coreOpDescriptor, SharedKotlinx_coroutines_coreLockFreeLinkedListNode, SharedKotlinx_coroutines_coreLockFreeLinkedListNodeAbstractAtomicDesc, SharedKotlinx_coroutines_coreLockFreeLinkedListNodeAddLastDesc<T>, SharedKotlinx_coroutines_coreLockFreeLinkedListNodeRemoveFirstDesc<T>;
+@class SharedSearchIntent, SharedSearchResultBusinessObject, SharedCFlow<T>, SharedSearchIntentNavigateToLocation, SharedSearchIntentSearchQuery, SharedSearchResultBusinessObjectFailed, SharedSearchResultBusinessObjectLoading, SharedSearchResultBusinessObjectSuccessResultItem, SharedSearchResultBusinessObjectSuccess, SharedLinkDtoCompanion, SharedLinkDto, SharedLinksDtoCompanion, SharedLinksDto, SharedLocationDtoCompanion, SharedLocationDto, SharedLocationsDtoCompanion, SharedLocationsDto, SharedSearchDtoCompanion, SharedSearchDto, SharedKotlinUnit, SharedKotlinCancellationException, SharedKotlinThrowable, SharedKotlinx_coroutines_coreConflatedBroadcastChannel<E>, SharedKotlinArray<T>, SharedKotlinException, SharedKotlinRuntimeException, SharedKotlinIllegalStateException, SharedKotlinx_serialization_coreSerializersModule, SharedKotlinx_serialization_coreSerialKind, SharedKotlinNothing, SharedKotlinx_coroutines_coreAtomicDesc, SharedKotlinx_coroutines_coreLockFreeLinkedListNodePrepareOp, SharedKotlinx_coroutines_coreAtomicOp<__contravariant T>, SharedKotlinx_coroutines_coreOpDescriptor, SharedKotlinx_coroutines_coreLockFreeLinkedListNode, SharedKotlinx_coroutines_coreLockFreeLinkedListNodeAbstractAtomicDesc, SharedKotlinx_coroutines_coreLockFreeLinkedListNodeAddLastDesc<T>, SharedKotlinx_coroutines_coreLockFreeLinkedListNodeRemoveFirstDesc<T>;
 
 @protocol SharedKotlinx_serialization_coreKSerializer, SharedKotlinx_coroutines_coreFlowCollector, SharedKotlinx_coroutines_coreFlow, SharedKtor_ioCloseable, SharedKotlinx_coroutines_coreReceiveChannel, SharedKotlinx_coroutines_coreSelectClause2, SharedKotlinx_coroutines_coreSendChannel, SharedKotlinx_coroutines_coreBroadcastChannel, SharedKotlinx_serialization_coreEncoder, SharedKotlinx_serialization_coreSerialDescriptor, SharedKotlinx_serialization_coreSerializationStrategy, SharedKotlinx_serialization_coreDecoder, SharedKotlinx_serialization_coreDeserializationStrategy, SharedKotlinx_coroutines_coreChannelIterator, SharedKotlinx_coroutines_coreSelectClause1, SharedKotlinx_coroutines_coreSelectInstance, SharedKotlinSuspendFunction1, SharedKotlinx_serialization_coreCompositeEncoder, SharedKotlinAnnotation, SharedKotlinx_serialization_coreCompositeDecoder, SharedKotlinIterator, SharedKotlinx_coroutines_coreDisposableHandle, SharedKotlinContinuation, SharedKotlinFunction, SharedKotlinx_serialization_coreSerializersModuleCollector, SharedKotlinKClass, SharedKotlinCoroutineContext, SharedKotlinKDeclarationContainer, SharedKotlinKAnnotatedElement, SharedKotlinKClassifier, SharedKotlinCoroutineContextElement, SharedKotlinCoroutineContextKey;
 
@@ -145,14 +145,6 @@ __attribute__((swift_name("KotlinBoolean")))
 @end;
 
 __attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("Platform")))
-@interface SharedPlatform : SharedBase
-- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
-+ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
-@property (readonly) NSString *platform __attribute__((swift_name("platform")));
-@end;
-
-__attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("YrRepository")))
 @interface SharedYrRepository : SharedBase
 - (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
@@ -168,13 +160,13 @@ __attribute__((swift_name("SearchIntent")))
 @end;
 
 __attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("SearchIntent.GoToLocation")))
-@interface SharedSearchIntentGoToLocation : SharedSearchIntent
+__attribute__((swift_name("SearchIntent.NavigateToLocation")))
+@interface SharedSearchIntentNavigateToLocation : SharedSearchIntent
 - (instancetype)initWithLocationId:(NSString *)locationId __attribute__((swift_name("init(locationId:)"))) __attribute__((objc_designated_initializer));
 - (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
 + (instancetype)new __attribute__((unavailable));
 - (NSString *)component1 __attribute__((swift_name("component1()")));
-- (SharedSearchIntentGoToLocation *)doCopyLocationId:(NSString *)locationId __attribute__((swift_name("doCopy(locationId:)")));
+- (SharedSearchIntentNavigateToLocation *)doCopyLocationId:(NSString *)locationId __attribute__((swift_name("doCopy(locationId:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));

@@ -17,8 +17,10 @@ class YrSearchViewModel : ObservableObject {
         }
     }
     
-    func intent(intent: SearchIntent) {
+    func intent(intent: SearchIntent){
         repository.intent(intent: intent)
     }
+    
+    
     
 }
