@@ -8,7 +8,8 @@ import kotlinx.coroutines.flow.*
 import no.nrk.yr.yrtestkmmregular.dispatcher.CFlow
 import no.nrk.yr.yrtestkmmregular.dispatcher.wrap
 import no.nrk.yr.yrtestkmmregular.http.httpClient
-import no.nrk.yr.yrtestkmmregular.models.bo.SearchResult
+import no.nrk.yr.yrtestkmmregular.models.bo.SearchIntent
+import no.nrk.yr.yrtestkmmregular.models.bo.SearchResultBusinessObject
 import no.nrk.yr.yrtestkmmregular.models.dto.SearchDto
 
 class YrRepository {
@@ -25,31 +26,40 @@ class YrRepository {
         }
     }
 
-    fun searchFor(query: String) {
-        queryStateFlow.value = query
+    fun intent(intent: SearchIntent) {
+        when (intent) {
+            is SearchIntent.SearchQuery -> queryStateFlow.value = intent.query
+            is SearchIntent.GoToLocation -> TODO()
+        }
+
     }
 
-    val searchResultFlow: CFlow<SearchResult> = queryStateFlow.flatMapLatest { query ->
-        flow {
-            emit(SearchResult.Loading)
-            if (query.isNotEmpty()) {
-                val dto =
-                    client.get<SearchDto>("https://www.yr.no/api/v0/locations/search?q=$query")
-                emit(map(dto))
-            } else {
-                emit(SearchResult.Failed("Empty"))
+    val searchResultFlow: CFlow<SearchResultBusinessObject> =
+        queryStateFlow.flatMapLatest { query ->
+            flow {
+                emit(SearchResultBusinessObject.Loading)
+                if (query.isNotEmpty()) {
+                    try {
+                        val dto =
+                            client.get<SearchDto>("https://www.yr.no/api/v0/locations/search?q=$query")
+                        emit(mapToBusinessObject(dto))
+                    } catch (ex: Exception) {
+                        emit(SearchResultBusinessObject.Failed("Failed to connect to network"))
+                    }
+                } else {
+                    emit(SearchResultBusinessObject.Failed("..."))
+                }
             }
-        }
-    }.wrap()
+        }.wrap()
 
-    private fun map(dto: SearchDto): SearchResult {
+    private fun mapToBusinessObject(dto: SearchDto): SearchResultBusinessObject {
         val searchResult = dto._embedded?.location
 
         return if (searchResult.isNullOrEmpty()) {
-            SearchResult.Failed("No result")
+            SearchResultBusinessObject.Failed("No result")
         } else {
-            SearchResult.Success(items = searchResult.map {
-                SearchResult.Success.ResultItem(id = it.id, name = it.name)
+            SearchResultBusinessObject.Success(items = searchResult.map {
+                SearchResultBusinessObject.Success.ResultItem(id = it.id, name = it.name)
             })
         }
     }

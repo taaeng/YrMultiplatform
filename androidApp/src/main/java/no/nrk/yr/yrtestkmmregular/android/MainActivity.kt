@@ -9,7 +9,8 @@ import androidx.lifecycle.lifecycleScope
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
 import no.nrk.yr.yrtestkmmregular.YrRepository
-import no.nrk.yr.yrtestkmmregular.models.bo.SearchResult
+import no.nrk.yr.yrtestkmmregular.models.bo.SearchIntent
+import no.nrk.yr.yrtestkmmregular.models.bo.SearchResultBusinessObject
 
 class MainActivity : AppCompatActivity() {
 
@@ -19,14 +20,14 @@ class MainActivity : AppCompatActivity() {
 
         val repo = YrRepository()
         val tv: TextView = findViewById(R.id.text_view)
-        repo.searchFor("Oslo")
+        repo.intent(SearchIntent.SearchQuery("Oslo"))
         lifecycleScope.launch {
             repo.searchResultFlow.flowWithLifecycle(lifecycle, Lifecycle.State.STARTED)
                 .collect { searchResult ->
                     when(searchResult){
-                        is SearchResult.Failed -> "Error: " + searchResult.msg
-                        SearchResult.Loading -> "Loading"
-                        is SearchResult.Success -> {
+                        is SearchResultBusinessObject.Failed -> "Error: " + searchResult.msg
+                        SearchResultBusinessObject.Loading -> "Loading"
+                        is SearchResultBusinessObject.Success -> {
                             var result = "Data:"
                             searchResult.items.forEach {
                                 result += "*${it.id}: ${it.name}\n"

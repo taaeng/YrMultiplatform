@@ -3,7 +3,7 @@ import shared
 
 struct ContentView: View {
     
-    @ObservedObject  var viewModel = LocationListViewModel(repository: YrRepository())
+    @ObservedObject  var viewModel = YrSearchViewModel(repository: YrRepository())
     @State private var query: String = ""
     
     var body: some View {
@@ -18,8 +18,8 @@ struct ContentView: View {
                 }.padding(16)
                 
                 let searchResult = viewModel.searchResultPublished
-                if(searchResult is SearchResult.Success){
-                    let successResult = searchResult as! SearchResult.Success
+                if(searchResult is SearchResultBusinessObject.Success){
+                    let successResult = searchResult as! SearchResultBusinessObject.Success
                     ScrollView {
                         VStack(alignment: .leading) {
                             ForEach(successResult.items, id: \.self) { result in
@@ -34,9 +34,9 @@ struct ContentView: View {
                         }.frame(width: geometry.size.width)
                         
                     }
-                } else if(searchResult is SearchResult.Loading){
+                } else if(searchResult is SearchResultBusinessObject.Loading){
                     Text("Loading").frame(maxWidth: .infinity, maxHeight: .infinity,alignment: .center)
-                } else if(searchResult is SearchResult.Failed){
+                } else if(searchResult is SearchResultBusinessObject.Failed){
                     let failedResult = searchResult as! SearchResult.Failed
                     Text(failedResult.msg).frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
                 }
