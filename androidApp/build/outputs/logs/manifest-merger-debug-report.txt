@@ -1,10 +1,10 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/thomasaaeng/AndroidStudioProjects/YrTestKMMRegular/androidApp/src/main/AndroidManifest.xml:2:1-19:12
-INJECTED from /Users/thomasaaeng/AndroidStudioProjects/YrTestKMMRegular/androidApp/src/main/AndroidManifest.xml:2:1-19:12
-INJECTED from /Users/thomasaaeng/AndroidStudioProjects/YrTestKMMRegular/androidApp/src/main/AndroidManifest.xml:2:1-19:12
-INJECTED from /Users/thomasaaeng/AndroidStudioProjects/YrTestKMMRegular/androidApp/src/main/AndroidManifest.xml:2:1-19:12
-MERGED from [:shared] /Users/thomasaaeng/AndroidStudioProjects/YrTestKMMRegular/shared/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
+ADDED from /Users/thomasaaeng/Projects/playground/YrMultiplatform/androidApp/src/main/AndroidManifest.xml:2:1-19:12
+INJECTED from /Users/thomasaaeng/Projects/playground/YrMultiplatform/androidApp/src/main/AndroidManifest.xml:2:1-19:12
+INJECTED from /Users/thomasaaeng/Projects/playground/YrMultiplatform/androidApp/src/main/AndroidManifest.xml:2:1-19:12
+INJECTED from /Users/thomasaaeng/Projects/playground/YrMultiplatform/androidApp/src/main/AndroidManifest.xml:2:1-19:12
+MERGED from [:shared] /Users/thomasaaeng/Projects/playground/YrMultiplatform/shared/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.4.0] /Users/thomasaaeng/.gradle/caches/transforms-3/ec1860f0575a5d6833db5473f1fd7237/transformed/lifecycle-runtime-ktx-2.4.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.material:material:1.4.0] /Users/thomasaaeng/.gradle/caches/transforms-3/3d18534321fb200f5afa4f77bdd0f5af/transformed/material-1.4.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.2] /Users/thomasaaeng/.gradle/caches/transforms-3/a02abe5a80cb2c500dc7614f29e57c38/transformed/constraintlayout-2.1.2/AndroidManifest.xml:2:1-11:12
@@ -45,29 +45,29 @@ MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/
 MERGED from [androidx.print:print:1.0.0] /Users/thomasaaeng/.gradle/caches/transforms-3/193ebe95a4c15d3a58a1ed24f1488da3/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/thomasaaeng/.gradle/caches/transforms-3/8299f625483fc979ee574c46ac4dc876/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/thomasaaeng/.gradle/caches/transforms-3/9346cc140e1cd0deb597971de61ef27e/transformed/annotation-experimental-1.1.0/AndroidManifest.xml:17:1-24:12
-INJECTED from /Users/thomasaaeng/AndroidStudioProjects/YrTestKMMRegular/androidApp/src/main/AndroidManifest.xml:2:1-19:12
-INJECTED from /Users/thomasaaeng/AndroidStudioProjects/YrTestKMMRegular/androidApp/src/main/AndroidManifest.xml:2:1-19:12
-INJECTED from /Users/thomasaaeng/AndroidStudioProjects/YrTestKMMRegular/androidApp/src/main/AndroidManifest.xml:2:1-19:12
+INJECTED from /Users/thomasaaeng/Projects/playground/YrMultiplatform/androidApp/src/main/AndroidManifest.xml:2:1-19:12
+INJECTED from /Users/thomasaaeng/Projects/playground/YrMultiplatform/androidApp/src/main/AndroidManifest.xml:2:1-19:12
+INJECTED from /Users/thomasaaeng/Projects/playground/YrMultiplatform/androidApp/src/main/AndroidManifest.xml:2:1-19:12
 	package
-		ADDED from /Users/thomasaaeng/AndroidStudioProjects/YrTestKMMRegular/androidApp/src/main/AndroidManifest.xml:3:5-49
-		INJECTED from /Users/thomasaaeng/AndroidStudioProjects/YrTestKMMRegular/androidApp/src/main/AndroidManifest.xml
-		INJECTED from /Users/thomasaaeng/AndroidStudioProjects/YrTestKMMRegular/androidApp/src/main/AndroidManifest.xml
+		ADDED from /Users/thomasaaeng/Projects/playground/YrMultiplatform/androidApp/src/main/AndroidManifest.xml:3:5-49
+		INJECTED from /Users/thomasaaeng/Projects/playground/YrMultiplatform/androidApp/src/main/AndroidManifest.xml
+		INJECTED from /Users/thomasaaeng/Projects/playground/YrMultiplatform/androidApp/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/thomasaaeng/AndroidStudioProjects/YrTestKMMRegular/androidApp/src/main/AndroidManifest.xml
-		ADDED from /Users/thomasaaeng/AndroidStudioProjects/YrTestKMMRegular/androidApp/src/main/AndroidManifest.xml:2:1-19:12
-		INJECTED from /Users/thomasaaeng/AndroidStudioProjects/YrTestKMMRegular/androidApp/src/main/AndroidManifest.xml
+		INJECTED from /Users/thomasaaeng/Projects/playground/YrMultiplatform/androidApp/src/main/AndroidManifest.xml
+		ADDED from /Users/thomasaaeng/Projects/playground/YrMultiplatform/androidApp/src/main/AndroidManifest.xml:2:1-19:12
+		INJECTED from /Users/thomasaaeng/Projects/playground/YrMultiplatform/androidApp/src/main/AndroidManifest.xml
 	android:versionCode
-		INJECTED from /Users/thomasaaeng/AndroidStudioProjects/YrTestKMMRegular/androidApp/src/main/AndroidManifest.xml
-		ADDED from /Users/thomasaaeng/AndroidStudioProjects/YrTestKMMRegular/androidApp/src/main/AndroidManifest.xml:2:1-19:12
-		INJECTED from /Users/thomasaaeng/AndroidStudioProjects/YrTestKMMRegular/androidApp/src/main/AndroidManifest.xml
+		INJECTED from /Users/thomasaaeng/Projects/playground/YrMultiplatform/androidApp/src/main/AndroidManifest.xml
+		ADDED from /Users/thomasaaeng/Projects/playground/YrMultiplatform/androidApp/src/main/AndroidManifest.xml:2:1-19:12
+		INJECTED from /Users/thomasaaeng/Projects/playground/YrMultiplatform/androidApp/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/thomasaaeng/AndroidStudioProjects/YrTestKMMRegular/androidApp/src/main/AndroidManifest.xml:2:11-69
+		ADDED from /Users/thomasaaeng/Projects/playground/YrMultiplatform/androidApp/src/main/AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from /Users/thomasaaeng/AndroidStudioProjects/YrTestKMMRegular/androidApp/src/main/AndroidManifest.xml:5:5-67
+ADDED from /Users/thomasaaeng/Projects/playground/YrMultiplatform/androidApp/src/main/AndroidManifest.xml:5:5-67
 	android:name
-		ADDED from /Users/thomasaaeng/AndroidStudioProjects/YrTestKMMRegular/androidApp/src/main/AndroidManifest.xml:5:22-64
+		ADDED from /Users/thomasaaeng/Projects/playground/YrMultiplatform/androidApp/src/main/AndroidManifest.xml:5:22-64
 application
-ADDED from /Users/thomasaaeng/AndroidStudioProjects/YrTestKMMRegular/androidApp/src/main/AndroidManifest.xml:6:5-18:19
+ADDED from /Users/thomasaaeng/Projects/playground/YrMultiplatform/androidApp/src/main/AndroidManifest.xml:6:5-18:19
 MERGED from [com.google.android.material:material:1.4.0] /Users/thomasaaeng/.gradle/caches/transforms-3/3d18534321fb200f5afa4f77bdd0f5af/transformed/material-1.4.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.4.0] /Users/thomasaaeng/.gradle/caches/transforms-3/3d18534321fb200f5afa4f77bdd0f5af/transformed/material-1.4.0/AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.2] /Users/thomasaaeng/.gradle/caches/transforms-3/a02abe5a80cb2c500dc7614f29e57c38/transformed/constraintlayout-2.1.2/AndroidManifest.xml:9:5-20
@@ -85,33 +85,33 @@ MERGED from [androidx.startup:startup-runtime:1.0.0] /Users/thomasaaeng/.gradle/
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.7.0] /Users/thomasaaeng/.gradle/caches/transforms-3/915776ff2a31315e95645505d468a83f/transformed/core-1.7.0/AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from /Users/thomasaaeng/AndroidStudioProjects/YrTestKMMRegular/androidApp/src/main/AndroidManifest.xml:8:9-35
+		ADDED from /Users/thomasaaeng/Projects/playground/YrMultiplatform/androidApp/src/main/AndroidManifest.xml:8:9-35
 	android:allowBackup
-		ADDED from /Users/thomasaaeng/AndroidStudioProjects/YrTestKMMRegular/androidApp/src/main/AndroidManifest.xml:7:9-36
+		ADDED from /Users/thomasaaeng/Projects/playground/YrMultiplatform/androidApp/src/main/AndroidManifest.xml:7:9-36
 	android:theme
-		ADDED from /Users/thomasaaeng/AndroidStudioProjects/YrTestKMMRegular/androidApp/src/main/AndroidManifest.xml:9:9-40
+		ADDED from /Users/thomasaaeng/Projects/playground/YrMultiplatform/androidApp/src/main/AndroidManifest.xml:9:9-40
 activity#no.nrk.yr.yrtestkmmregular.android.MainActivity
-ADDED from /Users/thomasaaeng/AndroidStudioProjects/YrTestKMMRegular/androidApp/src/main/AndroidManifest.xml:10:9-17:20
+ADDED from /Users/thomasaaeng/Projects/playground/YrMultiplatform/androidApp/src/main/AndroidManifest.xml:10:9-17:20
 	android:exported
-		ADDED from /Users/thomasaaeng/AndroidStudioProjects/YrTestKMMRegular/androidApp/src/main/AndroidManifest.xml:12:13-36
+		ADDED from /Users/thomasaaeng/Projects/playground/YrMultiplatform/androidApp/src/main/AndroidManifest.xml:12:13-36
 	android:name
-		ADDED from /Users/thomasaaeng/AndroidStudioProjects/YrTestKMMRegular/androidApp/src/main/AndroidManifest.xml:11:13-41
+		ADDED from /Users/thomasaaeng/Projects/playground/YrMultiplatform/androidApp/src/main/AndroidManifest.xml:11:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/thomasaaeng/AndroidStudioProjects/YrTestKMMRegular/androidApp/src/main/AndroidManifest.xml:13:13-16:29
+ADDED from /Users/thomasaaeng/Projects/playground/YrMultiplatform/androidApp/src/main/AndroidManifest.xml:13:13-16:29
 action#android.intent.action.MAIN
-ADDED from /Users/thomasaaeng/AndroidStudioProjects/YrTestKMMRegular/androidApp/src/main/AndroidManifest.xml:14:17-69
+ADDED from /Users/thomasaaeng/Projects/playground/YrMultiplatform/androidApp/src/main/AndroidManifest.xml:14:17-69
 	android:name
-		ADDED from /Users/thomasaaeng/AndroidStudioProjects/YrTestKMMRegular/androidApp/src/main/AndroidManifest.xml:14:25-66
+		ADDED from /Users/thomasaaeng/Projects/playground/YrMultiplatform/androidApp/src/main/AndroidManifest.xml:14:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/thomasaaeng/AndroidStudioProjects/YrTestKMMRegular/androidApp/src/main/AndroidManifest.xml:15:17-77
+ADDED from /Users/thomasaaeng/Projects/playground/YrMultiplatform/androidApp/src/main/AndroidManifest.xml:15:17-77
 	android:name
-		ADDED from /Users/thomasaaeng/AndroidStudioProjects/YrTestKMMRegular/androidApp/src/main/AndroidManifest.xml:15:27-74
+		ADDED from /Users/thomasaaeng/Projects/playground/YrMultiplatform/androidApp/src/main/AndroidManifest.xml:15:27-74
 uses-sdk
-INJECTED from /Users/thomasaaeng/AndroidStudioProjects/YrTestKMMRegular/androidApp/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/thomasaaeng/AndroidStudioProjects/YrTestKMMRegular/androidApp/src/main/AndroidManifest.xml
-INJECTED from /Users/thomasaaeng/AndroidStudioProjects/YrTestKMMRegular/androidApp/src/main/AndroidManifest.xml
-MERGED from [:shared] /Users/thomasaaeng/AndroidStudioProjects/YrTestKMMRegular/shared/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:shared] /Users/thomasaaeng/AndroidStudioProjects/YrTestKMMRegular/shared/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+INJECTED from /Users/thomasaaeng/Projects/playground/YrMultiplatform/androidApp/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/thomasaaeng/Projects/playground/YrMultiplatform/androidApp/src/main/AndroidManifest.xml
+INJECTED from /Users/thomasaaeng/Projects/playground/YrMultiplatform/androidApp/src/main/AndroidManifest.xml
+MERGED from [:shared] /Users/thomasaaeng/Projects/playground/YrMultiplatform/shared/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:shared] /Users/thomasaaeng/Projects/playground/YrMultiplatform/shared/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.4.0] /Users/thomasaaeng/.gradle/caches/transforms-3/ec1860f0575a5d6833db5473f1fd7237/transformed/lifecycle-runtime-ktx-2.4.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.4.0] /Users/thomasaaeng/.gradle/caches/transforms-3/ec1860f0575a5d6833db5473f1fd7237/transformed/lifecycle-runtime-ktx-2.4.0/AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.android.material:material:1.4.0] /Users/thomasaaeng/.gradle/caches/transforms-3/3d18534321fb200f5afa4f77bdd0f5af/transformed/material-1.4.0/AndroidManifest.xml:20:5-44
@@ -192,16 +192,16 @@ MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/thomasaaeng/.gradl
 MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/thomasaaeng/.gradle/caches/transforms-3/8299f625483fc979ee574c46ac4dc876/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/thomasaaeng/.gradle/caches/transforms-3/9346cc140e1cd0deb597971de61ef27e/transformed/annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/thomasaaeng/.gradle/caches/transforms-3/9346cc140e1cd0deb597971de61ef27e/transformed/annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
-INJECTED from /Users/thomasaaeng/AndroidStudioProjects/YrTestKMMRegular/androidApp/src/main/AndroidManifest.xml
-INJECTED from /Users/thomasaaeng/AndroidStudioProjects/YrTestKMMRegular/androidApp/src/main/AndroidManifest.xml
+INJECTED from /Users/thomasaaeng/Projects/playground/YrMultiplatform/androidApp/src/main/AndroidManifest.xml
+INJECTED from /Users/thomasaaeng/Projects/playground/YrMultiplatform/androidApp/src/main/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /Users/thomasaaeng/AndroidStudioProjects/YrTestKMMRegular/androidApp/src/main/AndroidManifest.xml
-		ADDED from /Users/thomasaaeng/AndroidStudioProjects/YrTestKMMRegular/androidApp/src/main/AndroidManifest.xml
-		INJECTED from /Users/thomasaaeng/AndroidStudioProjects/YrTestKMMRegular/androidApp/src/main/AndroidManifest.xml
+		INJECTED from /Users/thomasaaeng/Projects/playground/YrMultiplatform/androidApp/src/main/AndroidManifest.xml
+		ADDED from /Users/thomasaaeng/Projects/playground/YrMultiplatform/androidApp/src/main/AndroidManifest.xml
+		INJECTED from /Users/thomasaaeng/Projects/playground/YrMultiplatform/androidApp/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/thomasaaeng/AndroidStudioProjects/YrTestKMMRegular/androidApp/src/main/AndroidManifest.xml
-		ADDED from /Users/thomasaaeng/AndroidStudioProjects/YrTestKMMRegular/androidApp/src/main/AndroidManifest.xml
-		INJECTED from /Users/thomasaaeng/AndroidStudioProjects/YrTestKMMRegular/androidApp/src/main/AndroidManifest.xml
+		INJECTED from /Users/thomasaaeng/Projects/playground/YrMultiplatform/androidApp/src/main/AndroidManifest.xml
+		ADDED from /Users/thomasaaeng/Projects/playground/YrMultiplatform/androidApp/src/main/AndroidManifest.xml
+		INJECTED from /Users/thomasaaeng/Projects/playground/YrMultiplatform/androidApp/src/main/AndroidManifest.xml
 provider#androidx.startup.InitializationProvider
 ADDED from [androidx.emoji2:emoji2:1.0.0] /Users/thomasaaeng/.gradle/caches/transforms-3/6caab940e626505cf584d5c2232964dc/transformed/emoji2-1.0.0/AndroidManifest.xml:26:9-34:20
 MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] /Users/thomasaaeng/.gradle/caches/transforms-3/c351ca92d188df8f77242742e376da6c/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:26:9-34:20

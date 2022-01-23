@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/thomasaaeng/AndroidStudioProjects/YrTestKMMRegular/androidApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-h360dp-land-v13/values-h360dp-land-v13.xml",
+            "outputFile": "/Users/thomasaaeng/Projects/playground/YrMultiplatform/androidApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-h360dp-land-v13/values-h360dp-land-v13.xml",
             "map": [
                 {
                     "source": "/Users/thomasaaeng/.gradle/caches/transforms-3/3d18534321fb200f5afa4f77bdd0f5af/transformed/material-1.4.0/res/values-h360dp-land-v13/values-h360dp-land-v13.xml",

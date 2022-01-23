@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/thomasaaeng/AndroidStudioProjects/YrTestKMMRegular/androidApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ky/values-ky.xml",
+            "outputFile": "/Users/thomasaaeng/Projects/playground/YrMultiplatform/androidApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ky/values-ky.xml",
             "map": [
                 {
                     "source": "/Users/thomasaaeng/.gradle/caches/transforms-3/3d18534321fb200f5afa4f77bdd0f5af/transformed/material-1.4.0/res/values-ky/values-ky.xml",

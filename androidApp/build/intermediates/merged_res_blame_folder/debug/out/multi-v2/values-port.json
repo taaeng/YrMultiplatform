@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/thomasaaeng/AndroidStudioProjects/YrTestKMMRegular/androidApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-port/values-port.xml",
+            "outputFile": "/Users/thomasaaeng/Projects/playground/YrMultiplatform/androidApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-port/values-port.xml",
             "map": [
                 {
                     "source": "/Users/thomasaaeng/.gradle/caches/transforms-3/4695aeba92ac942cbee4ce6a0885863e/transformed/appcompat-1.4.0/res/values-port/values-port.xml",

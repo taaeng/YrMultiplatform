@@ -4,5 +4,5 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 data class SearchDto(
-        var _embedded: LocationsDto,
+        var _embedded: LocationsDto?,
 )

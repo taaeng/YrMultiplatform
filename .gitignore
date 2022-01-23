@@ -40,3 +40,4 @@ app/production
 /feature-map/build
 /library-common-ui/build
 *.keystore
+/androidApp/build/

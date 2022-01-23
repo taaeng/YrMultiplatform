@@ -33,7 +33,8 @@ class YrRepository {
         flow {
             emit(SearchResult.Loading)
             if (query.isNotEmpty()) {
-                val dto = client.get<SearchDto>("https://www.yr.no/api/v0/locations/search?q=$query")
+                val dto =
+                    client.get<SearchDto>("https://www.yr.no/api/v0/locations/search?q=$query")
                 emit(map(dto))
             } else {
                 emit(SearchResult.Failed("Empty"))
@@ -42,9 +43,15 @@ class YrRepository {
     }.wrap()
 
     private fun map(dto: SearchDto): SearchResult {
-        return SearchResult.Success(items = dto._embedded.location.map {
-            SearchResult.Success.ResultItem(id = it.id, name = it.name)
-        })
+        val searchResult = dto._embedded?.location
+
+        return if (searchResult.isNullOrEmpty()) {
+            SearchResult.Failed("No result")
+        } else {
+            SearchResult.Success(items = searchResult.map {
+                SearchResult.Success.ResultItem(id = it.id, name = it.name)
+            })
+        }
     }
 
 }
